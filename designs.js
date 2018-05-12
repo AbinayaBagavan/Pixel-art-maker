@@ -8,6 +8,13 @@ function makeGrid()
 {
   // Your code goes here!
 let canvas=document.querySelector("#pixelCanvas");//get table element
+if(canvas.innerHTML.length!=0);
+{
+	for(i=0;i<canvas.innerHTML.length/2;i++)
+	{
+		canvas.deleteRow(0);
+	}
+}
 var height=document.querySelector("#inputHeight").value;
 var width=document.querySelector("#inputWidth").value;
 //alert("Width entered is"+width+"height is"+height);
